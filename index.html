@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b16">
+  <title>SAIDUR R. SAIMOON | Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="particles"></div>
+
+<!-- ================= LOGIN ================= -->
+<div class="login-page" id="loginPage">
+
+  <div class="login-glow"></div>
+
+  <div class="login-box">
+
+    <div class="mini-logo">S</div>
+
+    <p class="overline">PRIVATE PROFILE</p>
+
+    <h1>Welcome to<br><span>Saimoon's Space</span></h1>
+
+    <p class="login-description">
+      A professional profile with a tiny amount of unnecessary fun. 😄
+    </p>
+
+    <!-- STEP 1 -->
+    <div id="loginStep">
+
+      <label>Your Name</label>
+      <input
+        type="text"
+        id="visitorName"
+        placeholder="Enter your name"
+      >
+
+      <label>Phone Number</label>
+      <input
+        type="tel"
+        id="visitorPhone"
+        placeholder="01XXXXXXXXX"
+      >
+
+      <button class="main-btn" id="sendOtp">
+        Continue <span>→</span>
+      </button>
+
+      <small class="demo-text">
+        Demo verification • No real SMS is sent
+      </small>
+
+    </div>
+
+    <!-- STEP 2 -->
+    <div id="otpStep" class="hide">
+
+      <div class="otp-symbol">✦</div>
+
+      <h2>Verify Access</h2>
+
+      <p class="otp-description">
+        Your demo verification code is:
+      </p>
+
+      <div class="otp-code" id="generatedOtp">
+        000000
+      </div>
+
+      <input
+        type="number"
+        id="otpInput"
+        placeholder="Enter 6 digit code"
+      >
+
+      <button class="main-btn" id="verifyOtp">
+        Verify & Enter
+      </button>
+
+      <button class="back-btn" id="backBtn">
+        ← Go back
+      </button>
+
+    </div>
+
+    <p class="login-error" id="loginError"></p>
+
+  </div>
+</div>
+
+
+<!-- ================= WEBSITE ================= -->
+
+<div id="website" class="hide">
+
+<header class="navbar">
+
+  <div class="logo-text">
+    SAIMOON<span>.</span>
+  </div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <button id="themeButton" class="theme-button">
+    ☾
+  </button>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+  <div class="hero-cover"></div>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+
+    <div class="profile-photo-wrap">
+      <img
+        src="profile.jpg"
+        alt="Saimoon"
+        class="profile-photo"
+        onerror="this.src='https://placehold.co/400x400/111827/ffffff?text=S'"
+      >
+
+      <div class="online-dot"></div>
+    </div>
+
+    <p class="overline">HELLO, I'M</p>
+
+    <h1>
+      MD. SAIDUR
+      <span>ROHOMAN SAIMOON</span>
+    </h1>
+
+    <p class="hero-role">
+      Student <b>•</b> Soil Science <b>•</b> Learner
+    </p>
+
+    <p class="hero-description">
+      Exploring education, technology, digital skills and everything
+      that makes life a little more interesting.
+    </p>
+
+    <div class="hero-buttons">
+
+      <a href="#about" class="main-btn">
+        Explore Profile ↓
+      </a>
+
+      <button class="outline-btn" id="funFactBtn">
+        Don't press this 😶
+      </button>
+
+    </div>
+
+  </div>
+
+  <div class="scroll-down">
+    SCROLL
+    <span>↓</span>
+  </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="section" id="about">
+
+  <div class="section-heading">
+    <p class="overline">01 • ABOUT ME</p>
+    <h2>A little bit <span>about me.</span></h2>
+  </div>
+
+  <div class="about-grid">
+
+    <div class="about-card glass">
+
+      <p class="card-label">WHO AM I?</p>
+
+      <h3>
+        Student today.<br>
+        Learner every day.
+      </h3>
+
+      <p>
+        I'm <strong>MD. Saidur Rohoman Saimoon</strong>, a Soil Science
+        student at Barishal Govt. College. I'm a curious and motivated
+        learner who enjoys exploring new technologies, developing
+        practical skills and learning from everyday experiences.
+      </p>
+
+      <p>
+        Alongside my academic studies, I'm interested in computers,
+        digital tools, communication and problem-solving. I believe
+        continuous learning and adaptability are important for personal
+        and professional growth.
+      </p>
+
+      <div class="quote">
+        “Still learning. Still growing. Still figuring out
+        where the Wi-Fi password is.” 😄
+      </div>
+
+    </div>
+
+
+    <div class="personal-card glass">
+
+      <div class="info-row">
+        <span>Full Name</span>
+        <strong>MD. SAIDUR ROHOMAN SAIMOON</strong>
+      </div>
+
+      <div class="info-row">
+        <span>Nickname</span>
+        <strong>Saimoon</strong>
+      </div>
+
+      <div class="info-row">
+        <span>Profession</span>
+        <strong>Student</strong>
+      </div>
+
+      <div class="info-row">
+        <span>Department</span>
+        <strong>Soil Science</strong>
+      </div>
+
+      <div class="info-row">
+        <span>Location</span>
+        <strong>Charfesson, Bhola</strong>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= EDUCATION ================= -->
+
+<section class="section dark-section" id="education">
+
+  <div class="section-heading">
+    <p class="overline">02 • EDUCATION</p>
+    <h2>My academic <span>journey.</span></h2>
+  </div>
+
+  <div class="timeline">
+
+    <div class="timeline-card">
+
+      <div class="timeline-year">
+        2025–26
+      </div>
+
+      <div>
+        <span class="timeline-tag">CURRENT</span>
+
+        <h3>B.Sc. (Hons.) — Soil Science</h3>
+
+        <p>
+          Barishal Govt. College
+        </p>
+
+        <small>
+          Currently studying • Honours 1st Year
+        </small>
+      </div>
+
+    </div>
+
+
+    <div class="timeline-card">
+
+      <div class="timeline-year">
+        2025
+      </div>
+
+      <div>
+
+        <h3>Higher Secondary Certificate</h3>
+
+        <p>
+          Charfesson Govt. College
+        </p>
+
+        <small>
+          Science
+        </small>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+
+<section class="section" id="skills">
+
+  <div class="section-heading">
+    <p class="overline">03 • SKILLS</p>
+    <h2>Things I can <span>do.</span></h2>
+  </div>
+
+  <div class="skills-grid">
+
+    <div class="skill-card">
+      <div class="skill-number">01</div>
+      <div class="skill-icon">💬</div>
+      <h3>Communication</h3>
+      <p>Communication & interpersonal skills</p>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-number">02</div>
+      <div class="skill-icon">💻</div>
+      <h3>Computer Skills</h3>
+      <p>Basic computer operation & digital literacy</p>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-number">03</div>
+      <div class="skill-icon">📊</div>
+      <h3>Microsoft Office</h3>
+      <p>Word, Excel & PowerPoint</p>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-number">04</div>
+      <div class="skill-icon">⌨️</div>
+      <h3>Typing</h3>
+      <p>Bangla & English • Approx. 30 WPM</p>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-number">05</div>
+      <div class="skill-icon">📁</div>
+      <h3>Data Handling</h3>
+      <p>Data entry & document handling</p>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-number">06</div>
+      <div class="skill-icon">🌐</div>
+      <h3>Online Research</h3>
+      <p>Internet research & online communication</p>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-number">07</div>
+      <div class="skill-icon">🧠</div>
+      <h3>Problem Solving</h3>
+      <p>Analytical thinking & practical solutions</p>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-number">08</div>
+      <div class="skill-icon">🚀</div>
+      <h3>Adaptability</h3>
+      <p>Time management & willingness to learn</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= HOBBIES ================= -->
+
+<section class="section dark-section">
+
+  <div class="section-heading">
+    <p class="overline">04 • LIFE OUTSIDE STUDY</p>
+    <h2>Things I enjoy <span>doing.</span></h2>
+  </div>
+
+  <div class="hobby-grid">
+
+    <div class="hobby-card">
+      <span>🏊</span>
+      <h3>Swimming</h3>
+      <p>Good way to refresh the mind.</p>
+    </div>
+
+    <div class="hobby-card">
+      <span>🚗</span>
+      <h3>Long Drive</h3>
+      <p>Road + music + fresh air.</p>
+    </div>
+
+    <div class="hobby-card">
+      <span>🎬</span>
+      <h3>Movies</h3>
+      <p>Sometimes a good story is all you need.</p>
+    </div>
+
+    <div class="hobby-card">
+      <span>🎮</span>
+      <h3>Video Games</h3>
+      <p>Strategy, fun and blaming the lag. 😅</p>
+    </div>
+
+    <div class="hobby-card">
+      <span>🎧</span>
+      <h3>Music</h3>
+      <p>A soundtrack for almost every mood.</p>
+    </div>
+
+    <div class="hobby-card">
+      <span>💻</span>
+      <h3>Technology</h3>
+      <p>Exploring useful digital tools.</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= FUN ================= -->
+
+<section class="section">
+
+  <div class="fun-box">
+
+    <p class="overline">05 • A LITTLE FUN</p>
+
+    <h2>
+      Professional profile.<br>
+      <span>Not a professional robot.</span> 🤖
+    </h2>
+
+    <p>
+      Every serious profile deserves at least a little nonsense.
+    </p>
+
+    <button class="main-btn" id="randomFact">
+      Generate a Saimoon Fact
+    </button>
+
+    <div class="fact-box" id="factBox">
+      Click the button. Let's see what happens. 👀
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= GALLERY ================= -->
+
+<section class="section dark-section" id="gallery">
+
+  <div class="section-heading">
+    <p class="overline">06 • MY MOMENTS</p>
+    <h2>A few <span>memories.</span></h2>
+  </div>
+
+  <div class="gallery">
+
+    <div class="gallery-item big">
+      <img src="cover.jpg" alt="Cover photo"
+      onerror="this.src='https://placehold.co/900x600/111827/ffffff?text=COVER+PHOTO'">
+      <div class="gallery-caption">My Space</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="photo1.jpg" alt="Moment 1"
+      onerror="this.src='https://placehold.co/600x600/111827/ffffff?text=PHOTO+01'">
+    </div>
+
+    <div class="gallery-item">
+      <img src="photo2.jpg" alt="Moment 2"
+      onerror="this.src='https://placehold.co/600x600/111827/ffffff?text=PHOTO+02'">
+    </div>
+
+    <div class="gallery-item">
+      <img src="photo3.jpg" alt="Moment 3"
+      onerror="this.src='https://placehold.co/600x600/111827/ffffff?text=PHOTO+03'">
+    </div>
+
+    <div class="gallery-item">
+      <img src="photo4.jpg" alt="Moment 4"
+      onerror="this.src='https://placehold.co/600x600/111827/ffffff?text=PHOTO+04'">
+    </div>
+
+    <div class="gallery-item">
+      <img src="photo5.jpg" alt="Moment 5"
+      onerror="this.src='https://placehold.co/600x600/111827/ffffff?text=PHOTO+05'">
+    </div>
+
+    <div class="gallery-item">
+      <img src="photo6.jpg" alt="Moment 6"
+      onerror="this.src='https://placehold.co/600x600/111827/ffffff?text=PHOTO+06'">
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="section" id="contact">
+
+  <div class="section-heading">
+    <p class="overline">07 • CONTACT</p>
+    <h2>Let's <span>connect.</span></h2>
+  </div>
+
+  <div class="contact-grid">
+
+    <a href="tel:01610426493" class="contact-card">
+      <div class="contact-icon">☎</div>
+      <div>
+        <small>PHONE</small>
+        <strong>01610426493</strong>
+      </div>
+    </a>
+
+    <a href="mailto:srsaimoon@proton.me" class="contact-card">
+      <div class="contact-icon">✉</div>
+      <div>
+        <small>EMAIL</small>
+        <strong>srsaimoon@proton.me</strong>
+      </div>
+    </a>
+
+    <a
+      href="https://www.facebook.com/Saidur.R.Saimoon"
+      target="_blank"
+      class="contact-card"
+    >
+      <div class="contact-icon">f</div>
+      <div>
+        <small>FACEBOOK</small>
+        <strong>Saidur R. Saimoon</strong>
+      </div>
+    </a>
+
+    <a
+      href="https://www.instagram.com/s.r.saimoon"
+      target="_blank"
+      class="contact-card"
+    >
+      <div class="contact-icon">◎</div>
+      <div>
+        <small>INSTAGRAM</small>
+        <strong>@s.r.saimoon</strong>
+      </div>
+    </a>
+
+    <a
+      href="https://wa.me/qr/3ZWP6IYVEFZGP1"
+      target="_blank"
+      class="contact-card"
+    >
+      <div class="contact-icon">◉</div>
+      <div>
+        <small>WHATSAPP</small>
+        <strong>Message me</strong>
+      </div>
+    </a>
+
+    <div class="contact-card">
+      <div class="contact-icon">⌂</div>
+      <div>
+        <small>ADDRESS</small>
+        <strong>Charfesson, Bhola, Barishal</strong>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+  <div class="footer-logo">
+    SAIMOON<span>.</span>
+  </div>
+
+  <p>
+    MD. Saidur Rohoman Saimoon • Student • Soil Science
+  </p>
+
+  <p class="footer-funny">
+    Built with HTML, CSS, JavaScript & a suspicious amount of curiosity. 😄
+  </p>
+
+</footer>
+
+</div>
+
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+  </html>
